@@ -23,6 +23,7 @@ def loginPage(request):
         try: 
             user = User.objects.get(username = username)
         except:
+            # 2:32:25 - Flash Messages
             messages.error(request, 'User does not exist')
 
         user = authenticate(request, username=username,password=password)   
