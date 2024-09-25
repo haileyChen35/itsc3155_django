@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'base.apps.BaseConfig'
     'corsheaders',
+
+    
 ]
 
 MIDDLEWARE = [
